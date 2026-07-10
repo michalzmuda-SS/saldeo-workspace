@@ -1,0 +1,19 @@
+{
+  "name": "ssa-product",
+  "version": "0.4.0",
+  "description": "SaldeoSMART Product / SDLC — 23 agentów V-Model (w tym Head of Product) + 12 dołączonych skilli frameworka BMAD (party-mode, advanced-elicitation, shard-doc, code-review, sprint-planning, market-research, retrospective, document-project, create-story, correct-course, brainstorming, ux) + 1 skill do analizy technicznej i produktowej integracji/due diligence (integration-due-diligence). Pakiet samodzielny — bez zewnętrznych zależności.",
+  "author": {
+    "name": "BrainSHARE IT / SaldeoSMART (Visma Group)"
+  },
+  "license": "PROPRIETARY",
+  "keywords": [
+    "saldeosmart",
+    "visma",
+    "bmad",
+    "product",
+    "sdlc",
+    "agents",
+    "ksef",
+    "polish"
+  ]
+}
