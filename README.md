@@ -3,9 +3,11 @@
 Marketplace z modelem **`ssa-product`** — zespół Product / SDLC SaldeoSMART do instalacji w **VS Code**
 (przez rozszerzenie **Claude Code**) lub w terminalu (Claude Code CLI).
 
-`ssa-product` (v0.4.0): **23 agentów** V-Model (Ada, Maria, Sara, Bartek, Marek, Dominik, Aniela, Sylwia,
+`ssa-product` (v0.5.0): **30 person** V-Model: 23 role zespołowe (Ada, Maria, Sara, Bartek, Marek, Dominik, Aniela, Sylwia,
 Maksym, Maciej, Emilia, Jarek, Rafał, Norbert, Ewa, Kacper, Renata, Filip, Oliwia, Stefania, Jacek, Piotr
-oraz **Misza — Head of Product**) + 12 skilli frameworka BMAD + `integration-due-diligence`. Pakiet samodzielny.
+oraz **Misza — Head of Product**) oraz 7 person produktowych: **A1 Lena, A2 Klara, A3 Borys, A4 Zofia,
+A5 Tomasz, A6 Wiktor i A7 Anna**. Pakiet zawiera też 12 skilli frameworka BMAD + `integration-due-diligence`.
+Pakiet samodzielny.
 Język domyślny: **polski**. Polityka doboru modeli: `plugins/ssa-product/MODEL-ROUTING.md`.
 
 ---
@@ -32,7 +34,8 @@ Aktualizacje: `claude plugin marketplace update saldeosmart-agents` (lub `/plugi
 Prywatne repo zadziała, jeśli masz do niego dostęp w gicie (Claude Code używa Twoich poświadczeń git).
 
 ## Jak używać
-Po instalacji zawołaj agenta po imieniu, np. `bądź Adą`, `bądź Marią`, `bądź Miszą`. Agent przywita się
+Po instalacji zawołaj personę po imieniu lub kodzie, np. `bądź Adą`, `bądź Miszą`, `uruchom A1`
+albo `bądź Zofią`. Persona przywita się
 (po polsku) i pokaże menu działań. Zalecane: w folderze projektu miej `project-context.md` — agenci
 wczytają go automatycznie.
 
