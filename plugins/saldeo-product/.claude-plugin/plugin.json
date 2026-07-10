@@ -1,0 +1,18 @@
+{
+  "name": "saldeo-product",
+  "version": "1.0.0",
+  "description": "Lekki pakiet produktowo-analityczny SaldeoSMART: Ada, Maria, Sara, Stefania oraz persony produktowe A1-A7. Zawiera wyłącznie 9 wymaganych skilli produktowych, analitycznych i UX. Bez Head of Product/Miszy oraz ról delivery, engineering, QA i operations.",
+  "author": {
+    "name": "BrainSHARE IT / SaldeoSMART (Visma Group)"
+  },
+  "license": "PROPRIETARY",
+  "keywords": [
+    "saldeosmart",
+    "product",
+    "analytics",
+    "ux",
+    "agents",
+    "ksef",
+    "polish"
+  ]
+}

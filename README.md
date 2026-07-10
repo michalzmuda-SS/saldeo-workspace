@@ -1,7 +1,10 @@
 # SaldeoSMART Agents (Vmodel-S) — marketplace pluginów dla Claude Code / VS Code
 
-Marketplace z modelem **`ssa-product`** — zespół Product / SDLC SaldeoSMART do instalacji w **VS Code**
-(przez rozszerzenie **Claude Code**) lub w terminalu (Claude Code CLI).
+Marketplace z dwoma modelami SaldeoSMART do instalacji w **VS Code** przez rozszerzenie **Claude Code**
+lub w terminalu przez Claude Code CLI:
+
+- **`ssa-product`** - pełny zespół Product / SDLC.
+- **`saldeo-product`** - lekki zespół produktowo-analityczny i UX, bez Miszy oraz ról technicznych.
 
 `ssa-product` (v0.5.0): **30 person** V-Model: 23 role zespołowe (Ada, Maria, Sara, Bartek, Marek, Dominik, Aniela, Sylwia,
 Maksym, Maciej, Emilia, Jarek, Rafał, Norbert, Ewa, Kacper, Renata, Filip, Oliwia, Stefania, Jacek, Piotr
@@ -9,6 +12,9 @@ oraz **Misza — Head of Product**) oraz 7 person produktowych: **A1 Lena, A2 Kl
 A5 Tomasz, A6 Wiktor i A7 Anna**. Pakiet zawiera też 12 skilli frameworka BMAD + `integration-due-diligence`.
 Pakiet samodzielny.
 Język domyślny: **polski**. Polityka doboru modeli: `plugins/ssa-product/MODEL-ROUTING.md`.
+
+`saldeo-product` (v1.0.0): **11 person** - Ada, Maria, Sara, Stefania oraz A1-A7 - i tylko 9 wymaganych
+skilli produktowych, analitycznych i UX. Pakiet nie zawiera Miszy ani ról delivery, engineering, QA i operations.
 
 ---
 
@@ -24,10 +30,22 @@ W panelu Claude Code (VS Code) lub w terminalu:
 /plugin install ssa-product@saldeosmart-agents
 ```
 
+Instalacja lekkiego pakietu produktowego:
+```
+/plugin marketplace add michalzmuda-SS/saldeo-workspace
+/plugin install saldeo-product@saldeosmart-agents
+```
+
 To samo z CLI:
 ```
 claude plugin marketplace add michalzmuda-SS/saldeo-workspace
 claude plugin install ssa-product@saldeosmart-agents
+```
+
+Wariant lekki przez CLI:
+```
+claude plugin marketplace add michalzmuda-SS/saldeo-workspace
+claude plugin install saldeo-product@saldeosmart-agents
 ```
 
 Aktualizacje: `claude plugin marketplace update saldeosmart-agents` (lub `/plugin marketplace update`).

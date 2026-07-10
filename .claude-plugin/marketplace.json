@@ -2,13 +2,18 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "saldeosmart-agents",
   "owner": { "name": "BrainSHARE IT / SaldeoSMART (Visma Group)" },
-  "description": "Modele agentów SaldeoSMART (Vmodel-S) do Claude Code / VS Code. Obecnie: Product / SDLC (ssa-product).",
+  "description": "Modele agentów SaldeoSMART (Vmodel-S) do Claude Code / VS Code: pełny ssa-product i lekki saldeo-product.",
   "metadata": { "pluginRoot": "./plugins" },
   "plugins": [
     {
       "name": "ssa-product",
       "source": "ssa-product",
       "description": "Product / SDLC — 30 person V-Model: 23 role zespołowe (w tym Head of Product/Misza) oraz persony produktowe A1-A7 + 12 skilli frameworka BMAD + integration-due-diligence. Pakiet samodzielny."
+    },
+    {
+      "name": "saldeo-product",
+      "source": "saldeo-product",
+      "description": "Lekki pakiet produktowo-analityczny i UX — Ada, Maria, Sara, Stefania oraz A1-A7; 9 wymaganych skilli pomocniczych; bez Miszy i ról technicznych."
     }
   ]
 }
