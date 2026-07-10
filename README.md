@@ -16,6 +16,8 @@ Język domyślny: **polski**. Polityka doboru modeli: `plugins/ssa-product/MODEL
 `saldeo-product` (v1.0.0): **11 person** - Ada, Maria, Sara, Stefania oraz A1-A7 - i tylko 9 wymaganych
 skilli produktowych, analitycznych i UX. Pakiet nie zawiera Miszy ani ról delivery, engineering, QA i operations.
 
+Instrukcja instalacji w Claude Cowork: [`docs/INSTALACJA-SALDEO-PRODUCT-CLAUDE-COWORK.md`](docs/INSTALACJA-SALDEO-PRODUCT-CLAUDE-COWORK.md).
+
 ---
 
 ## Wymagania
