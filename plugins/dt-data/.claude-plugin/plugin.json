@@ -1,0 +1,19 @@
+{
+  "name": "dt-data",
+  "version": "0.6.0",
+  "description": "SaldeoSMART Data & Transformation — 8 agentów + 13 dobranych skilli frameworka (architektura, badania techniczne, review kodu, forensic, edge-case/adversarial, indeks docs). Pakiet samodzielny.",
+  "author": {
+    "name": "BrainSHARE IT / SaldeoSMART (Visma Group)"
+  },
+  "license": "PROPRIETARY",
+  "keywords": [
+    "saldeosmart",
+    "visma",
+    "data",
+    "transformation",
+    "data-engineering",
+    "governance",
+    "ai-platform",
+    "polish"
+  ]
+}
