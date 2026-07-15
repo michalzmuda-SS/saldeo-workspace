@@ -1,0 +1,19 @@
+{
+  "name": "par-analytics",
+  "version": "0.8.0",
+  "description": "SaldeoSMART Product Analytics & Market Research — 8 agentów + 14 dobranych skilli frameworka (research, insighty, product framing, edycja/raporty, adversarial review). Pakiet samodzielny. + skill lead-research-assistant (identyfikacja i kwalifikacja leadów, ICP, strategie kontaktu).",
+  "author": {
+    "name": "BrainSHARE IT / SaldeoSMART (Visma Group)"
+  },
+  "license": "PROPRIETARY",
+  "keywords": [
+    "saldeosmart",
+    "visma",
+    "analytics",
+    "market-research",
+    "competitive-intelligence",
+    "pricing",
+    "insights",
+    "polish"
+  ]
+}

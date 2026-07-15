@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      { "matcher": "Edit|Write",
+        "hooks": [ { "type": "command", "command": "REPLACE_WITH_TYPECHECK  # np. mvn -q -DskipTests compile | tail -40  /  npm run typecheck  /  cargo check" } ] }
+    ],
+    "Stop": [
+      { "matcher": "",
+        "hooks": [ { "type": "command", "command": "REPLACE_WITH_TESTS  # np. mvn -q test | tail -60  /  npm test  /  pytest -q" } ] }
+    ]
+  }
+}

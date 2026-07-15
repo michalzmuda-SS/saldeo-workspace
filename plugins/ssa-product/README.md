@@ -2,7 +2,8 @@
 
 Pakiet agentów (skilli) dla zespołu **Product** SaldeoSMART. 30 person pokrywających pełen V-Model:
 Head of Product / CPO (Misza), Product Analyst (Ada), Business Analyst (Maria), Product Owner (Sara),
-Scrum Master (Bartek), Domain Architect (Dominik), DBA (Aniela), SecOps (Sylwia), Performance (Maksym),
+Scrum Master (Bartek), Engineering Manager (Marek), Domain Architect (Dominik), DBA (Aniela),
+SecOps (Sylwia), Performance (Maksym),
 dev: Java (Maciej) / Web (Emilia) / Android (Jarek) / iOS (Rafał),
 SDET: backend (Norbert) / frontend (Ewa) / android (Kacper) / iOS (Renata),
 DevOps (Filip), Tech Writer (Oliwia), UX (Stefania), Spec (Jacek), Prompt Engineer (Piotr).
@@ -30,3 +31,9 @@ Pakiet jest samodzielny. Poza 30 personami zawiera 12 skilli, do których odwoł
 
 Uwaga: niektóre z tych skilli używają skryptu `resolve_customization.py` z frameworka BMAD; mają wbudowany
 fallback („if script fails, resolve manually"), więc działają także bez pełnej instalacji `_bmad/`.
+
+## Analysis Depth Gate
+
+Przed nowym, nietrywialnym zadaniem model pyta o jeden z trzech poziomów: `C-level recap`, `Raport`
+albo `Raport pogłębiony`. Wybór obowiązuje również follow-upy i subagentów tego samego zadania.
+Szczegółowe reguły opisuje `ANALYSIS-DEPTH-POLICY.md`.

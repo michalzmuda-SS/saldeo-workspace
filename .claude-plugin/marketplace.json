@@ -2,18 +2,27 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "saldeosmart-agents",
   "owner": { "name": "BrainSHARE IT / SaldeoSMART (Visma Group)" },
-  "description": "Modele agentów SaldeoSMART (Vmodel-S) do Claude Code / VS Code: pełny ssa-product i lekki saldeo-product.",
-  "metadata": { "pluginRoot": "./plugins" },
+  "description": "Modele agentów SaldeoSMART (Vmodel-S): Product/SDLC, lekki Product i UX, Product Analytics & Market Research oraz Data & Transformation.",
   "plugins": [
     {
       "name": "ssa-product",
-      "source": "ssa-product",
-      "description": "Product / SDLC — 30 person V-Model: 23 role zespołowe (w tym Head of Product/Misza) oraz persony produktowe A1-A7 + 12 skilli frameworka BMAD + integration-due-diligence. Obowiązkowy Analysis Depth Gate. Pakiet samodzielny."
+      "source": "./plugins/ssa-product",
+      "description": "Product / SDLC — 30 person V-Model, skille, pętle, subagenci, Design System i obowiązkowy Analysis Depth Gate."
     },
     {
       "name": "saldeo-product",
-      "source": "saldeo-product",
+      "source": "./plugins/saldeo-product",
       "description": "Lekki pakiet produktowo-analityczny i UX — Ada, Maria, Sara, Stefania oraz A1-A7; 9 wymaganych skilli pomocniczych; obowiązkowy Analysis Depth Gate; bez Miszy i ról technicznych."
+    },
+    {
+      "name": "par-analytics",
+      "source": "./plugins/par-analytics",
+      "description": "Product Analytics & Market Research — 8 agentów, skille, pętle i Design System."
+    },
+    {
+      "name": "dt-data",
+      "source": "./plugins/dt-data",
+      "description": "Data & Transformation — 8 agentów, skille, pętle i subagenci."
     }
   ]
 }
