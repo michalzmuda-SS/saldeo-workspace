@@ -1,7 +1,7 @@
 {
   "name": "saldeo-product",
-  "version": "1.0.0",
-  "description": "Lekki pakiet produktowo-analityczny SaldeoSMART: Ada, Maria, Sara, Stefania oraz persony produktowe A1-A7. Zawiera wyłącznie 9 wymaganych skilli produktowych, analitycznych i UX. Bez Head of Product/Miszy oraz ról delivery, engineering, QA i operations.",
+  "version": "1.1.0",
+  "description": "Lekki pakiet produktowo-analityczny SaldeoSMART: Ada, Maria, Sara, Stefania oraz persony produktowe A1-A7. Zawiera 9 wymaganych skilli i obowiązkowy Analysis Depth Gate (C-level recap, Raport, Raport pogłębiony). Bez Head of Product/Miszy oraz ról delivery, engineering, QA i operations.",
   "author": {
     "name": "BrainSHARE IT / SaldeoSMART (Visma Group)"
   },

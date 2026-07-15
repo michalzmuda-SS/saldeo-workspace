@@ -1,0 +1,41 @@
+{
+  "description": "Loads and reinforces the SaldeoSMART Analysis Depth Gate for sessions, prompts, and subagents.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/analysis-depth-gate.mjs"],
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/analysis-depth-gate.mjs"],
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/analysis-depth-gate.mjs"],
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,15 +6,19 @@ lub w terminalu przez Claude Code CLI:
 - **`ssa-product`** - pełny zespół Product / SDLC.
 - **`saldeo-product`** - lekki zespół produktowo-analityczny i UX, bez Miszy oraz ról technicznych.
 
-`ssa-product` (v0.5.0): **30 person** V-Model: 23 role zespołowe (Ada, Maria, Sara, Bartek, Marek, Dominik, Aniela, Sylwia,
+`ssa-product` (v0.6.0): **30 person** V-Model: 23 role zespołowe (Ada, Maria, Sara, Bartek, Marek, Dominik, Aniela, Sylwia,
 Maksym, Maciej, Emilia, Jarek, Rafał, Norbert, Ewa, Kacper, Renata, Filip, Oliwia, Stefania, Jacek, Piotr
 oraz **Misza — Head of Product**) oraz 7 person produktowych: **A1 Lena, A2 Klara, A3 Borys, A4 Zofia,
 A5 Tomasz, A6 Wiktor i A7 Anna**. Pakiet zawiera też 12 skilli frameworka BMAD + `integration-due-diligence`.
 Pakiet samodzielny.
 Język domyślny: **polski**. Polityka doboru modeli: `plugins/ssa-product/MODEL-ROUTING.md`.
 
-`saldeo-product` (v1.0.0): **11 person** - Ada, Maria, Sara, Stefania oraz A1-A7 - i tylko 9 wymaganych
+`saldeo-product` (v1.1.0): **11 person** - Ada, Maria, Sara, Stefania oraz A1-A7 - i tylko 9 wymaganych
 skilli produktowych, analitycznych i UX. Pakiet nie zawiera Miszy ani ról delivery, engineering, QA i operations.
+
+Oba pakiety zawierają obowiązkowy **Analysis Depth Gate**. Przed nowym, nietrywialnym zadaniem model pyta o poziom:
+`C-level recap`, `Raport` albo `Raport pogłębiony`. Wybór jest dziedziczony przez follow-upy i subagentów
+w ramach tego samego zadania. Pełna polityka znajduje się w pliku `ANALYSIS-DEPTH-POLICY.md` każdego pakietu.
 
 Instrukcja instalacji w Claude Cowork: [`docs/INSTALACJA-SALDEO-PRODUCT-CLAUDE-COWORK.md`](docs/INSTALACJA-SALDEO-PRODUCT-CLAUDE-COWORK.md).
 

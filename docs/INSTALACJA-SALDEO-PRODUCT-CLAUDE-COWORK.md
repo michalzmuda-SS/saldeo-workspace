@@ -4,7 +4,7 @@ Ten przewodnik dotyczy wyłącznie lekkiego pakietu produktowo-analitycznego **`
 
 ## Co zostanie zainstalowane
 
-Pakiet `saldeo-product` w wersji `1.0.0` zawiera 11 person:
+Pakiet `saldeo-product` w wersji `1.1.0` zawiera 11 person:
 
 - Ada - Product Analyst
 - Maria - Business Analyst
@@ -19,6 +19,10 @@ Pakiet `saldeo-product` w wersji `1.0.0` zawiera 11 person:
 - Anna - A7 HR and Delegacje
 
 Pakiet nie zawiera Miszy ani ról developerskich, architektonicznych, QA, DevOps i operacyjnych.
+
+Wersja `1.1.0` dodaje obowiązkowy **Analysis Depth Gate**. Przed rozpoczęciem nowego, nietrywialnego
+zadania model lub persona pyta, czy wynik ma mieć poziom `C-level recap`, `Raport` czy `Raport pogłębiony`.
+W ramach tego samego zadania pytanie nie jest powtarzane, a subagenci dziedziczą wybrany poziom.
 
 ## Lokalizacja repozytorium
 
@@ -44,7 +48,7 @@ Elementy rozpoznawane przez Claude:
 | Manifest marketplace | `.claude-plugin/marketplace.json` |
 | Pakiet | `saldeo-product` |
 | Katalog pakietu | `plugins/saldeo-product` |
-| Wersja | `1.0.0` |
+| Wersja | `1.1.0` |
 
 Nie dodawaj bezpośredniego adresu do surowego pliku `marketplace.json`. Manifest korzysta ze względnej ścieżki do `plugins/saldeo-product`, dlatego Cowork powinien sklonować całe repozytorium.
 
@@ -108,6 +112,18 @@ Nie wybieraj `ssa-product`. Jest to pełny pakiet SDLC z większą liczbą perso
 
 Poprawna persona powinna przedstawić się właściwym imieniem, komunikować się po polsku i udostępnić swoje menu działań.
 
+Przy pierwszym nietrywialnym zadaniu bez jawnie wskazanego trybu powinna również zapytać:
+
+```text
+Jaki poziom opracowania wybierasz dla tego zadania?
+1. C-level recap
+2. Raport
+3. Raport pogłębiony
+```
+
+Jeżeli użytkownik wpisze na przykład `Tryb: Raport pogłębiony` już w pierwszym poleceniu, model nie powinien
+zadawać dodatkowego pytania. Dla prostych pytań, statusów i czysto mechanicznych operacji gate nie jest uruchamiany.
+
 ## Aktualizacja pakietu
 
 1. Otwórz **Cowork → Customize → Plugins**.
@@ -116,6 +132,9 @@ Poprawna persona powinna przedstawić się właściwym imieniem, komunikować si
 4. Jeżeli Cowork pokazuje aktualizację dla `saldeo-product`, zastosuj ją.
 
 Każde kolejne wydanie pakietu musi mieć podbitą wersję w `plugins/saldeo-product/.claude-plugin/plugin.json`.
+
+Po aktualizacji do wersji `1.1.0` uruchom nową sesję Cowork. Hooki pluginu są ładowane przy starcie sesji;
+już otwarta rozmowa może nadal korzystać z poprzedniej wersji pakietu.
 
 ## Rozwiązywanie problemów
 
@@ -134,6 +153,14 @@ michalzmuda-SS/saldeo-workspace
 ```
 
 jako dozwolonego lub zarządzanego marketplace'u organizacji.
+
+### Model nie pyta o poziom opracowania
+
+- Sprawdź, czy zainstalowana jest wersja `1.1.0` lub nowsza.
+- Odśwież marketplace, zaktualizuj pakiet i rozpocznij nową sesję Cowork.
+- Upewnij się, że plugin `saldeo-product` jest włączony.
+- W środowisku zarządzanym zapytaj administratora, czy pluginowe hooki są dozwolone. Polityka
+   `allowManagedHooksOnly` może blokować hooki z pluginów, których organizacja nie wymusiła centralnie.
 
 ### Marketplace jest widoczny, ale nie ma `saldeo-product`
 

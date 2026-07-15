@@ -8,12 +8,12 @@
     {
       "name": "ssa-product",
       "source": "ssa-product",
-      "description": "Product / SDLC — 30 person V-Model: 23 role zespołowe (w tym Head of Product/Misza) oraz persony produktowe A1-A7 + 12 skilli frameworka BMAD + integration-due-diligence. Pakiet samodzielny."
+      "description": "Product / SDLC — 30 person V-Model: 23 role zespołowe (w tym Head of Product/Misza) oraz persony produktowe A1-A7 + 12 skilli frameworka BMAD + integration-due-diligence. Obowiązkowy Analysis Depth Gate. Pakiet samodzielny."
     },
     {
       "name": "saldeo-product",
       "source": "saldeo-product",
-      "description": "Lekki pakiet produktowo-analityczny i UX — Ada, Maria, Sara, Stefania oraz A1-A7; 9 wymaganych skilli pomocniczych; bez Miszy i ról technicznych."
+      "description": "Lekki pakiet produktowo-analityczny i UX — Ada, Maria, Sara, Stefania oraz A1-A7; 9 wymaganych skilli pomocniczych; obowiązkowy Analysis Depth Gate; bez Miszy i ról technicznych."
     }
   ]
 }
